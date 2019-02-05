@@ -19,7 +19,7 @@ I have written this in Python3 and it might run into issues with Python2 especia
 2. python3 ddb.py <EB_Application_Name> <EB_Environment_Name> 
 
 Optional Flags:
-  -r : Specify the region (https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RegionsAndAvailabilityZones.html)
+  --region : Specify the region (https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RegionsAndAvailabilityZones.html)
 ```
   
 
