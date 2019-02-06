@@ -20,7 +20,7 @@ Both the modes will also perform a Blue/Green deployment by doing a CNAME swap b
 https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features.CNAMESwap.html
 
 
-###Cleanup
+### Cleanup
 
 Once the CNAME swap has been completed, it is upto the user to cleanup old resources. Terminating the old Elastic Beanstalk environment after running GOD mode will result in failed termination, and the underlying Cloud Formation stack will be in DELETE_FAILED state. You will have to manually delete the Cloud Formation stack by skipping the "AWSEBRDSDatabase" resource, and then terminate the old EB environment from the Elastic Beanstalk console.
 
