@@ -2,7 +2,7 @@
 
 Eliminates the EB + RDS dependency by creating a new set of Elastic Beanstalk environment and standalone RDS dB instance with all the configuration settings as the old one.
 
-Elastic Beanstalk offers users the ability to launch a RDS dB instance as part of the environment. However, as per AWS, this is not best practice for production systems since it tied the lifecycle of the RDS dB to thatr of the Elastic Beanstalk environment. (https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.RDS.html)
+Elastic Beanstalk offers users the ability to launch a RDS dB instance as part of the environment. However, as per AWS, this is not best practice for production systems since it tied the lifecycle of the RDS dB to that of the Elastic Beanstalk environment. (https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.RDS.html)
 
 While one option to fix this is to manually create a new set of EB environment, RDS dB instance, and then configure all the settings again, this can be tedious depending on the amount of customization that was done to the EB environment. (Especially if you have a lot of environmnet variables)
 
